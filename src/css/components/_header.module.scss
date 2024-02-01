@@ -1,0 +1,28 @@
+.header {
+    &_content {
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_navList {
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 0;
+    
+        li:first-child {
+            margin-right: 64px;
+        }
+    }
+
+    &_navLink {
+        color: $primary;
+        font-size: 24px;
+        font-weight: 500;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

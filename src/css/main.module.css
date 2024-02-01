@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.header_content {
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_navList {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+.header_navList li:first-child {
+  margin-right: 64px;
+}
+.header_navLink {
+  color: #FF6060;
+  font-size: 24px;
+  font-weight: 500;
+}
+.header_navLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer_content {
+  background-color: #000000;
+  width: 100%;
+  min-width: 330px;
+  height: 209px;
+  margin-bottom: 0;
+}
+.footer_divLogo {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 66px;
+}
+.footer_logo {
+  width: 122px;
+  height: 40px;
+}
+.footer_divText {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 29px;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.banner_homeContainer {
+  width: 100%;
+  height: 223px;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+.banner_aboutContainer {
+  width: 100%;
+  height: 223px;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+.banner_image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 50%;
+     object-position: 0% 50%;
+  height: 100%;
+  border-radius: 25px;
+  filter: brightness(65%);
+}
+.banner_text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner_text p {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0 40px;
+}
+
+.cardsSet_section {
+  margin-top: 40px;
+  padding: 3%;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+}
+.cardsSet_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.card_container {
+  width: 30%;
+  min-width: 280px;
+  height: 340px;
+  margin: 16px 8px;
+  background: linear-gradient(180deg, #FF6060 0%, rgb(100, 45, 45) 100%);
+  border-radius: 10px;
+}
+.card_divImg {
+  width: 96%;
+  height: 75%;
+  padding: 2% 2% 0 2%;
+}
+.card_img {
+  border-radius: 6px 6px 0 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.card_divText {
+  height: 20%;
+  display: flex;
+}
+.card_text {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto 20px;
+}
+
+/*
+.content_padding {
+    padding: 0px 100px;
+}
+
+html {
+    font-family: Montserrat;
+    min-width: 330px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    padding: 0 100px;
+}   
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+*//*# sourceMappingURL=main.module.css.map */
