@@ -12,11 +12,7 @@ function About() {
       <Header />
       <main className={style.content_padding}>
           <section className={style.collapse_section}>        
-                <div className={style.collapse_container} key={id} id={id}>
-                  <Collapse title={title} content={<p className={style.collapse_content}>{content}</p>} />
-                </div>
           </section>
-
       </main>
       <Footer />
     </>
