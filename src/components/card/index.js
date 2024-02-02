@@ -5,13 +5,12 @@ import style from '../../css/main.module.css'
 function Card({ id, title, image }) {
 	return (
 		<li key={id} className={style.card_container}>
-
-				<div className={style.card_divImg}>
-					<Image src={image} className={style.card_img} alt='Default image'/>
-				</div>
-				<div className={style.card_divText}>
-					<p className={style.card_text}>{title}</p>
-				</div>
+			<div className={style.card_divImg}>
+				<Image src={image} width={1000} height={1000} className={style.card_img} alt='Default image' />
+			</div>
+			<div className={style.card_divText}>
+				<p className={style.card_text}>{title}</p>
+			</div>
 		</li>
 	)
 };

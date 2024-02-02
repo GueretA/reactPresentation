@@ -23,12 +23,12 @@ function CardsSet() {
 				<></>
 			) : (
 				<ul className={style.cardsSet_list}>
-					{data.map(({ id, name, available }) => (
+					{data.map(({ id, name, status, photoUrls }) => (
 						<Card key={ `${id}-${GetInc()}`}
 							id={id}
 							title={name}
-							image={DefaultPetImage}
-							status={available}
+							image= {photoUrls[0] && photoUrls[0].includes('data:image/')?photoUrls[0]:DefaultPetImage}
+							status={status}
 						/>
 					))}
 				</ul>

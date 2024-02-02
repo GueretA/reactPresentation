@@ -6,6 +6,7 @@ import Footer from '../components/footer'
 import Banner from '../components/banner'
 import CardsSet from '../components/cardSet'
 import HomeBanner from '../assets/home-banner.png'
+import ButtonUp from '../components/buttonUp'
 
 import style from '../css/main.module.css'
 import {NextUIProvider} from "@nextui-org/react";
@@ -20,6 +21,7 @@ export default function Home() {
         <Banner src={HomeBanner} pageClass={style.banner_homeContainer} text="Pet store" />
       </main>
       <CardsSet />
+      <ButtonUp/>
       <Footer />
       </NextUIProvider>
   );
