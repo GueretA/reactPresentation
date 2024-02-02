@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 
+import style from '../../css/main.module.css'
+
 function Filter() {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["available"]));
   
@@ -16,7 +18,8 @@ function Filter() {
   }
 
   return (
-    <Dropdown className="drpFilter">
+    <div className={style.drpFilter}>
+    <Dropdown>
       <DropdownTrigger>
         <Button
           variant="bordered"
@@ -38,6 +41,7 @@ function Filter() {
         <DropdownItem key="sold">Sold</DropdownItem>
       </DropdownMenu>
     </Dropdown>
+    </div>
   )
 }
 
