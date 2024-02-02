@@ -1,26 +1,44 @@
-import { useState} from 'react'
+import React, { useState } from "react";
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 
 function Filter() {
-	const [filter, setFilter] = useState({});
+  const [selectedKeys, setSelectedKeys] = React.useState(new Set(["available"]));
+  
+  const selectedValue = React.useMemo(
+    () => Array.from(selectedKeys).join(", ").replaceAll("_", " "),
+    [selectedKeys]
+  );
 
-    const handleChangeFilter = event => {
-        setFilter(event.target.value);
-      }
+  const [filter, setFilter] = useState({});
 
-	return (
-	<div>
-      <label htmlFor="filter">Filter: </label>
-      <select
-        name="filter"
-        value={filter}
-        onChange={handleChangeFilter}
+  const handleChangeFilter = event => {
+    setFilter(event.target.value);
+  }
+
+  return (
+    <Dropdown>
+      <DropdownTrigger>
+        <Button
+          variant="bordered"
+          className="capitalize"
+        >
+          {selectedValue}
+        </Button>
+      </DropdownTrigger>
+      <DropdownMenu
+        aria-label="Single selection example"
+        variant="flat"
+        disallowEmptySelection
+        selectionMode="single"
+        selectedKeys={selectedKeys}
+        onSelectionChange={handleChangeFilter}
       >
-        <option value="available">Available</option>
-        <option value="pending">Pending</option>
-        <option value="sold">Sold</option>
-      </select>
-    </div>
-	)
+        <DropdownItem key="available">Available</DropdownItem>
+        <DropdownItem key="pending">Pending</DropdownItem>
+        <DropdownItem key="sold">Sold</DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  )
 }
 
 export default Filter
