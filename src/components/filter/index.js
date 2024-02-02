@@ -16,7 +16,7 @@ function Filter() {
   }
 
   return (
-    <Dropdown>
+    <Dropdown className="drpFilter">
       <DropdownTrigger>
         <Button
           variant="bordered"

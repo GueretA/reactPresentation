@@ -27,7 +27,7 @@ function CardsSet() {
 						<Card key={ `${id}-${GetInc()}`}
 							id={id}
 							title={name}
-							image= {photoUrls[0] && photoUrls[0].includes('data:image/')?photoUrls[0]:DefaultPetImage}
+							image= {photoUrls && photoUrls[0] && photoUrls[0].includes('data:image/')?photoUrls[0]:DefaultPetImage}
 							status={status}
 						/>
 					))}
