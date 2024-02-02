@@ -33,12 +33,12 @@ function Header() {
         </NavbarContent>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="/">
               Accueil
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link href="src\pages\about.jsx" aria-current="page">
+            <Link href="/about" aria-current="page">
               A propos
             </Link>
           </NavbarItem>
